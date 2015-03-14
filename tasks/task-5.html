@@ -1,0 +1,184 @@
+<!--
+TASK 5: Crowdsource Verification
+* Used to to verify images obtained from crowdsourcing
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HIT Task Templates</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <style>
+      .row {
+          margin-bottom: 70px;
+      }
+
+      #info {
+          margin-top: 20px;
+          background-color: lightblue;
+      }
+
+      img {
+          width: 50px;
+          margin-top: 20px;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function toggle(id) {
+         var e = document.getElementById(id);
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+      }
+    </script>
+
+  </head>
+  <body>
+
+        <div class="container">
+
+            <!-- INFORMATIONAL HEADER -->
+            <div id="info" class="row ">
+                <div class="col-md-12">
+                    <h3>Task 5: Crowdsource Verification</h3>
+                    <h4>Instructions <a href="#" onclick="toggle('instructions');"><small>show</small></a></h4>
+                    <div id="instructions" style="display:none;">
+                        <p>These are instructions for the worker.</p>
+                        <p>We can include lists of instructions for them:</p>
+                        <ul>
+                            <li>Instruction 1</li>
+                            <li>Instruction 2</li>
+                            <li>Instruction 3</li>
+                        </ul>
+                    </div>
+                    <h4>Project Information <a href="#" onclick="toggle('information');"><small>show</small></a></h4>
+                    <div id="information" style="display:none;">
+                        <p>This is information about the project that the worker can view if they are interested.</p>
+                    </div>
+                    <p class="text-right" style="margin-right: 20px;">Have a question or feedback? Please contact [email]</p>
+                </div>
+            </div> <!--END INFORMATIONAL HEADER-->
+
+            <!-- ALERT ATTENTION TO INSTRUCTIONS -->
+            <div class="alert alert-warning" role="alert">Identify the images to the best of your ability. All characters are english letters.</div>
+
+            <!-- TASK BODY -->
+            <div class="row">
+                <div class="col-md-4 img-container-md">
+                    <div class="text-center">
+                        <img src="../data/ocr/ocr-1.png" height="60px"/>
+                        <br/><br/>
+                        <input type="text" value="Hn" readonly>
+                    </div>
+
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="1" id="optionsRadios1" value="option1" checked>
+                        The transcription is correct.
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="1" id="optionsRadios2" value="option2">
+                        The transcription is incorrect.
+                      </label>
+                    </div>
+
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label>Value</label><br/>
+                        <input type="text" class="form-control" placeholder="Enter value" name="value01" size="17"/><br/>
+                        <label>
+                          <input type="checkbox"> Blank/No Image <br/>
+                          <input type="checkbox"> Not Legible
+                        </label>
+                      </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4 img-container-md">
+                    <div class="text-center">
+                        <img src="../data/ocr/ocr-6.png" height="60px"/>
+                        <br/><br/>
+                        <input type="text" value="Not Legible" readonly>
+                    </div>
+
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="2" id="optionsRadios3" value="option1" checked>
+                        The transcription is correct.
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="2" id="optionsRadios4" value="option2">
+                        The transcription is incorrect.
+                      </label>
+                    </div>
+
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label>Value</label><br/>
+                        <input type="text" class="form-control" placeholder="Enter value" name="value01" size="17"/><br/>
+                        <label>
+                          <input type="checkbox"> Blank/No Image <br/>
+                          <input type="checkbox"> Not Legible
+                        </label>
+                      </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4 img-container-md">
+                    <div class="text-center">
+                        <img src="../data/ocr/ocr-9.png" height="60px"/>
+                        <br/><br/>
+                        <input type="text" value="Po" readonly>
+                    </div>
+
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="3" id="optionsRadios5" value="option1" checked>
+                        The transcription is correct.
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="3" id="optionsRadios6" value="option2">
+                        The transcription is incorrect.
+                      </label>
+                    </div>
+
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label>Value</label><br/>
+                        <input type="text" class="form-control" placeholder="Enter value" name="value01" size="17"/><br/>
+                        <label>
+                          <input type="checkbox"> Blank/No Image <br/>
+                          <input type="checkbox"> Not Legible
+                        </label>
+                      </div>
+                    </form>
+                </div>
+            </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success" onclick="alert('HIT SUBMITTED')">Submit HIT</button>
+                </div>
+
+            </div>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </body>
+</html>
